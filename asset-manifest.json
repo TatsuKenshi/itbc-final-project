@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/itbc-final-project/static/css/main.d2450ea7.chunk.css",
+    "main.js": "/itbc-final-project/static/js/main.43894c1d.chunk.js",
+    "main.js.map": "/itbc-final-project/static/js/main.43894c1d.chunk.js.map",
+    "runtime-main.js": "/itbc-final-project/static/js/runtime-main.8c916daa.js",
+    "runtime-main.js.map": "/itbc-final-project/static/js/runtime-main.8c916daa.js.map",
+    "static/js/2.8f3fa7a0.chunk.js": "/itbc-final-project/static/js/2.8f3fa7a0.chunk.js",
+    "static/js/2.8f3fa7a0.chunk.js.map": "/itbc-final-project/static/js/2.8f3fa7a0.chunk.js.map",
+    "index.html": "/itbc-final-project/index.html",
+    "static/css/main.d2450ea7.chunk.css.map": "/itbc-final-project/static/css/main.d2450ea7.chunk.css.map",
+    "static/js/2.8f3fa7a0.chunk.js.LICENSE.txt": "/itbc-final-project/static/js/2.8f3fa7a0.chunk.js.LICENSE.txt",
+    "static/media/homebckgrd.ee31ccbf.jpg": "/itbc-final-project/static/media/homebckgrd.ee31ccbf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c916daa.js",
+    "static/js/2.8f3fa7a0.chunk.js",
+    "static/css/main.d2450ea7.chunk.css",
+    "static/js/main.43894c1d.chunk.js"
+  ]
+}
