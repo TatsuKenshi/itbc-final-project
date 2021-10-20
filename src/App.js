@@ -27,9 +27,6 @@ import Cart from "./pages/Cart";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
-
-  const BASENAME = "http://TatsuKenshi.github.io/itbc-final-project"
-
   // initial states
   // all game, all news, all giveaways states
   const [allGamesArray, setAllGamesArray] = useState([]);
@@ -99,7 +96,7 @@ function App() {
       <Router>
         <Nav user={user}></Nav>
         <Switch>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project">
+          <Route exact path="/">
             <Home
               allGamesArray={allGamesArray}
               allNewsArray={allNewsArray}
@@ -108,44 +105,44 @@ function App() {
               myFavoriteGames={myFavoriteGames}
             />
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/games">
+          <Route exact path="/games">
             <SearchGames allGamesArray={allGamesArray} />
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/games/:id">
+          <Route exact path="/games/:id">
             <SingleGame user={user} setMyFavoriteGames={setMyFavoriteGames} />
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/gamenews">
+          <Route exact path="/gamenews">
             <GameNews allNewsArray={allNewsArray} />
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/gamenews/:id">
+          <Route exact path="/gamenews/:id">
             <SingleNews allNewsArray={allNewsArray} />
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/giveaways">
+          <Route exact path="/giveaways">
             <Giveaways allGiveawaysArray={allGiveawaysArray} user={user} />
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/giveaways/:id">
+          <Route exact path="/giveaways/:id">
             <SingleGiveaway allGiveawaysArray={allGiveawaysArray} user={user} />
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/merch">
+          <Route exact path="/merch">
             <Merch
               allMerchArray={allMerchArray}
               setAllMerchArray={setAllMerchArray}
               user={user}
             ></Merch>
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/merch/:id">
+          <Route exact path="/merch/:id">
             <SingleMerchItem user={user}></SingleMerchItem>
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/about">
+          <Route exact path="/about">
             <About />
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/login">
+          <Route exact path="/login">
             <Login user={user} setUser={setUser} />
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/register">
+          <Route exact path="/register">
             <Register />
           </Route>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/cart">
+          <Route exact path="/cart">
             <Cart />
           </Route>
         </Switch>

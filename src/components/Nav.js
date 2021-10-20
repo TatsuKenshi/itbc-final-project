@@ -7,28 +7,28 @@ const Nav = ({user}) => {
     <StyledNav>
         
       <div>
-        <Link to="http://TatsuKenshi.github.io/itbc-final-project/"><img src={img} alt="" width="60px" height="60px" /></Link>
+        <Link to="/"><img src={img} alt="" width="60px" height="60px" /></Link>
       </div>
       <div>
-        <Link to="http://TatsuKenshi.github.io/itbc-final-project/">Home</Link>
+        <Link to="/">Home</Link>
       </div>
       <div>
-        <Link to="http://TatsuKenshi.github.io/itbc-final-project/games">Search Games</Link>
+        <Link to="/games">Search Games</Link>
       </div>
       <div>
-        <Link to="http://TatsuKenshi.github.io/itbc-final-project/gamenews">Game News</Link>
+        <Link to="/gamenews">Game News</Link>
       </div>
       <div>
-        <Link to="http://TatsuKenshi.github.io/itbc-final-project/giveaways">Giveaways</Link>
+        <Link to="/giveaways">Giveaways</Link>
       </div>
       <div>
-        <Link to="http://TatsuKenshi.github.io/itbc-final-project/merch">Merch</Link>
+        <Link to="/merch">Merch</Link>
       </div>
       <div>
-        <Link to="http://TatsuKenshi.github.io/itbc-final-project/about">About</Link>
+        <Link to="/about">About</Link>
       </div>
-        {user? "" : <div><Link to="http://TatsuKenshi.github.io/itbc-final-project/login">Login</Link></div> }
-        {user? "" : <div><Link to="http://TatsuKenshi.github.io/itbc-final-project/register">Register</Link></div> }
+        {user? "" : <div><Link to="/login">Login</Link></div> }
+        {user? "" : <div><Link to="/register">Register</Link></div> }
         {user? <div>{user?.username}</div> : "" }
     </StyledNav>
   );
