@@ -67,7 +67,7 @@ const Home = ({
                 <h3>Platform: {featGame1?.platform}</h3>
                 <h3>Genre: {featGame1?.genre}</h3>
                 {featGame1 ? (
-                  <Link to={`/games/${featGame1.id}`}>
+                  <Link to={`http://TatsuKenshi.github.io/itbc-final-project/games/${featGame1.id}`}>
                     <button className="featBtn">view game</button>
                   </Link>
                 ) : (
@@ -84,7 +84,7 @@ const Home = ({
                 <div>
                   <h3>{featNews1?.short_description}</h3>
                   {featNews1 ? (
-                    <Link to={`/gamenews/${featNews1.id}`}>
+                    <Link to={`http://TatsuKenshi.github.io/itbc-final-project/gamenews/${featNews1.id}`}>
                       <button className="featBtn">read more</button>
                     </Link>
                   ) : (
@@ -106,7 +106,7 @@ const Home = ({
                 <h3>Keys left: {featGiveaway1?.keys_left}</h3>
                 <div>
                   {featGiveaway1 ? (
-                    <Link to={`/login`}>
+                    <Link to={`http://TatsuKenshi.github.io/itbc-final-project/login`}>
                       <button className="featBtn">see giveaway</button>
                     </Link>
                   ) : (

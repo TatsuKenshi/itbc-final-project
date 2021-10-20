@@ -248,7 +248,7 @@ const Merch = ({ allMerchArray, setAllMerchArray, user }) => {
 
         {user && user.userCategory !== "admin" ? (
         <div className="goToCart">
-          <Link to="/cart">
+          <Link to="http://TatsuKenshi.github.io/itbc-final-project/cart">
             <button>go to cart</button>
           </Link>
         </div>

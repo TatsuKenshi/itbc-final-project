@@ -14,7 +14,7 @@ const MerchItem = ({ merchItem, user }) => {
         <h3>{merchItem.itemName}</h3>
         <p>Price: ${merchItem.price}</p>
         <p>{merchItem.shortDesc}</p>
-        <Link to={`/merch/${merchItem.id}`}>
+        <Link to={`http://TatsuKenshi.github.io/itbc-final-project/merch/${merchItem.id}`}>
           <button>go to item</button>
         </Link>
       </div>

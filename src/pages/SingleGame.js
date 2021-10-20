@@ -71,7 +71,7 @@ const SingleGame = ({ user, setMyFavoriteGames }) => {
                       if (!found) {
                         axios({
                           method: "patch",
-                          url: `http://localhost:3005/users/${user.id}`,
+                          url: `https://itbc-final-project-db.herokuapp.com/users/${user.id}`,
                           data: {
                             favoriteGames: [
                               ...favoriteGames,

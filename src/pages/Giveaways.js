@@ -40,7 +40,7 @@ const Giveaways = ({ allGiveawaysArray, user }) => {
       </div>
   </>
   :
-  <Redirect to="/login" />
+  <Redirect to="http://TatsuKenshi.github.io/itbc-final-project/login" />
 };
 
 export default Giveaways;
