@@ -96,7 +96,7 @@ function App() {
       <Router>
         <Nav user={user}></Nav>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/itbc-final-project/">
             <Home
               allGamesArray={allGamesArray}
               allNewsArray={allNewsArray}
@@ -105,44 +105,44 @@ function App() {
               myFavoriteGames={myFavoriteGames}
             />
           </Route>
-          <Route exact path="/games">
+          <Route exact path="/itbc-final-project/games">
             <SearchGames allGamesArray={allGamesArray} />
           </Route>
-          <Route exact path="/games/:id">
+          <Route exact path="/itbc-final-project/games/:id">
             <SingleGame user={user} setMyFavoriteGames={setMyFavoriteGames} />
           </Route>
-          <Route exact path="/gamenews">
+          <Route exact path="/itbc-final-project/gamenews">
             <GameNews allNewsArray={allNewsArray} />
           </Route>
-          <Route exact path="/gamenews/:id">
+          <Route exact path="/itbc-final-project/gamenews/:id">
             <SingleNews allNewsArray={allNewsArray} />
           </Route>
-          <Route exact path="/giveaways">
+          <Route exact path="/itbc-final-project/giveaways">
             <Giveaways allGiveawaysArray={allGiveawaysArray} user={user} />
           </Route>
-          <Route exact path="/giveaways/:id">
+          <Route exact path="/itbc-final-project/giveaways/:id">
             <SingleGiveaway allGiveawaysArray={allGiveawaysArray} user={user} />
           </Route>
-          <Route exact path="/merch">
+          <Route exact path="/itbc-final-project/merch">
             <Merch
               allMerchArray={allMerchArray}
               setAllMerchArray={setAllMerchArray}
               user={user}
             ></Merch>
           </Route>
-          <Route exact path="/merch/:id">
+          <Route exact path="/itbc-final-project/merch/:id">
             <SingleMerchItem user={user}></SingleMerchItem>
           </Route>
-          <Route exact path="/about">
+          <Route exact path="/itbc-final-project/about">
             <About />
           </Route>
-          <Route exact path="/login">
+          <Route exact path="/itbc-final-project/login">
             <Login user={user} setUser={setUser} />
           </Route>
-          <Route exact path="/register">
+          <Route exact path="/itbc-final-project/register">
             <Register />
           </Route>
-          <Route exact path="/cart">
+          <Route exact path="/itbc-final-project/cart">
             <Cart />
           </Route>
         </Switch>
