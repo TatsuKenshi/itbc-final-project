@@ -11,7 +11,7 @@ const Giveaway = ({ giveaway }) => {
       <div className="info">
         <h3>{giveaway.title}</h3>
         <p>Keys left: {giveaway.keys_left}</p>
-        <Link to={`http://TatsuKenshi.github.io/itbc-final-project/giveaways/${giveaway.id}`}>
+        <Link to={`/giveaways/${giveaway.id}`}>
           <button>read more</button>
         </Link>
       </div>

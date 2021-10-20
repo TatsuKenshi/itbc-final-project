@@ -19,7 +19,7 @@ const Game = ({ game }) => {
           <p>Platform: {game.platform}</p>
           <p>Release Date: {game.release_date}</p>
           <p>Short Description: {game.short_description}</p>
-          <Link to={`http://TatsuKenshi.github.io/itbc-final-project/games/${game.id}`}>
+          <Link to={`/games/${game.id}`}>
             <button>
               view game
             </button>

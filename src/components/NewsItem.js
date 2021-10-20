@@ -12,7 +12,7 @@ const NewsItem = ({ news }) => {
 
         <h3>{news.title}</h3>
         <p>{news.short_description}</p>
-         <Link to={`http://TatsuKenshi.github.io/itbc-final-project/gamenews/${news.id}`}>
+         <Link to={`/gamenews/${news.id}`}>
             <button>
               read more
             </button>

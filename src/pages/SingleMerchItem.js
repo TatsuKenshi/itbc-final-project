@@ -49,7 +49,7 @@ const SingleMerchItem = ({ user }) => {
           {/* login/register button */}
           {!user ? (
             <div className="loginToShop">
-              <Link to="http://TatsuKenshi.github.io/itbc-final-project/login">
+              <Link to="/login">
                 <button>login to shop</button>
               </Link>
             </div>
@@ -85,7 +85,7 @@ const SingleMerchItem = ({ user }) => {
       {/* go to cart div */}
       {user && user.userCategory !== "admin" ? (
         <div className="goToCart">
-          <Link to="http://TatsuKenshi.github.io/itbc-final-project/cart">
+          <Link to="/cart">
             <button>go to cart</button>
           </Link>
         </div>

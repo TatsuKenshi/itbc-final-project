@@ -33,7 +33,7 @@ const Login = ({ setUser, user }) => {
               );
               if (user) {
                 setUser(user);
-                history.push("http://TatsuKenshi.github.io/itbc-final-project/");
+                history.push("/");
               } else {
                 setError("Wrong data. Invalid username or password.");
               }
@@ -67,7 +67,7 @@ const Login = ({ setUser, user }) => {
       </div>
 
       <div className="regLink">
-        <Link to="http://TatsuKenshi.github.io/itbc-final-project/register"><h3>Not registered?</h3></Link>
+        <Link to="/register"><h3>Not registered?</h3></Link>
       </div>
 
       <div className="errorDiv">

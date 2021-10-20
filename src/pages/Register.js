@@ -66,7 +66,7 @@ const Register = () => {
               ) {
                 registerUser(newUser).then((res) => {
                   console.log(res.data);
-                  history.push("http://TatsuKenshi.github.io/itbc-final-project/login");
+                  history.push("/login");
                 });
               }
             });
