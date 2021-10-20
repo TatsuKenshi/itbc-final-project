@@ -99,7 +99,7 @@ function App() {
       <Router>
         <Nav user={user}></Nav>
         <Switch>
-          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project/">
+          <Route exact path="http://TatsuKenshi.github.io/itbc-final-project">
             <Home
               allGamesArray={allGamesArray}
               allNewsArray={allNewsArray}
