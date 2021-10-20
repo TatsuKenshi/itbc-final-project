@@ -96,7 +96,7 @@ function App() {
       <Router>
         <Nav user={user}></Nav>
         <Switch>
-          <Route exact path="/itbc-final/project">
+          <Route exact path="/itbc-final-project">
             <Home
               allGamesArray={allGamesArray}
               allNewsArray={allNewsArray}
