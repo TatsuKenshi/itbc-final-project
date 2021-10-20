@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/itbc-final-project/static/css/main.d2450ea7.chunk.css",
-    "main.js": "/itbc-final-project/static/js/main.ddd003f6.chunk.js",
-    "main.js.map": "/itbc-final-project/static/js/main.ddd003f6.chunk.js.map",
+    "main.js": "/itbc-final-project/static/js/main.49294d8d.chunk.js",
+    "main.js.map": "/itbc-final-project/static/js/main.49294d8d.chunk.js.map",
     "runtime-main.js": "/itbc-final-project/static/js/runtime-main.8c916daa.js",
     "runtime-main.js.map": "/itbc-final-project/static/js/runtime-main.8c916daa.js.map",
     "static/js/2.8f3fa7a0.chunk.js": "/itbc-final-project/static/js/2.8f3fa7a0.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.8c916daa.js",
     "static/js/2.8f3fa7a0.chunk.js",
     "static/css/main.d2450ea7.chunk.css",
-    "static/js/main.ddd003f6.chunk.js"
+    "static/js/main.49294d8d.chunk.js"
   ]
 }
