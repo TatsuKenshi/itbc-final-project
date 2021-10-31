@@ -28,15 +28,15 @@ export const allGiveaways = {
   },
 };
 
-export const getAllUsers = () => axios.get("http://localhost:3005/users");
+export const getAllUsers = () => axios.get("https://itbc-final-project-db.herokuapp.com/users");
 export const getUserById = (id) =>
-  axios.get(`http://localhost:3005/users/${id}`);
+  axios.get(`https://itbc-final-project-db.herokuapp.com/users/${id}`);
 export const registerUser = (newUser) =>
-  axios.post("hhttp://localhost:3005/users", newUser);
+  axios.post("https://itbc-final-project-db.herokuapp.com/users", newUser);
 
-export const getAllMerch = () => axios.get("http://localhost:3005/merch");
+export const getAllMerch = () => axios.get("https://itbc-final-project-db.herokuapp.com/merch");
 export const getOneMerchItem = (id) =>
-  axios.get(`http://localhost:3005/merch/${id}`);
+  axios.get(`https://itbc-final-project-db.herokuapp.com/merch/${id}`);
 export const newMerchItem = (
   itemName,
   category,
@@ -45,7 +45,7 @@ export const newMerchItem = (
   shortDesc,
   description
 ) =>
-  axios.post("http://localhost:3005/merch", {
+  axios.post("https://itbc-final-project-db.herokuapp.com/merch", {
     itemName,
     category,
     quantity,
@@ -55,6 +55,6 @@ export const newMerchItem = (
   });
 
 export const deleteMerchItem = (id) =>
-  axios.delete(`http://localhost:3005/merch/${id}`);
+  axios.delete(`https://itbc-final-project-db.herokuapp.com/merch/${id}`);
 
-export const addPurchase = (purchase, info) => axios.post(`http://localhost:3005/purchases`, {purchase, info})
+export const addPurchase = (purchase, info) => axios.post(`https://itbc-final-project-db.herokuapp.com/purchases`, {purchase, info})

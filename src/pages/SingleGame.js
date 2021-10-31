@@ -78,7 +78,7 @@ const SingleGame = ({ user, setUser, setMyFavoriteGames }) => {
                     // update the user in the base
                     axios({
                       method: "put",
-                      url: `http://localhost:3005/users/${user.id}`,
+                      url: `https://itbc-final-project-db.herokuapp.com/users/${user.id}`,
                       data: {
                         id: user.id,
                         username: user.username,
