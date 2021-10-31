@@ -16,7 +16,6 @@ import GameNews from "./pages/GameNews";
 import SingleNews from "./pages/SingleNews";
 import Giveaways from "./pages/Giveaways";
 import SingleGiveaway from "./pages/SingleGiveaway";
-import About from "./pages/About";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Footer from "./components/Footer";
@@ -35,7 +34,8 @@ function App() {
   const [allMerchArray, setAllMerchArray] = useState([]);
   const [user, setUser] = useState(null);
   const [myFavoriteGames, setMyFavoriteGames] = useState([]);
-  const [getFaves, setGetFaves] = useState(false);
+  const [purchase, setPurchase] = useState([]);
+  const [total, setTotal] = useState([]);
 
   // useEffects
   // all games
@@ -88,13 +88,25 @@ function App() {
         setMyFavoriteGames(res.data.favoriteGames);
       });
     }
-  }, [user]);
+  }, [user, myFavoriteGames]);
+
+  useEffect(() => {
+    if(user){
+      setPurchase([])
+    }
+  }, [])
+
+  useEffect(() => {
+    setTotal(purchase.map((item)=> item.itemPrice).reduce((prev, curr)=>{
+      return prev + curr
+    },0))
+  }, [purchase])
 
   // return with router
   return (
     <StyledApp>
       <Router>
-        <Nav user={user}></Nav>
+        <Nav user={user} setUser={setUser} purchase={purchase}></Nav>
         <Switch>
           <Route exact path="/">
             <Home
@@ -102,14 +114,20 @@ function App() {
               allNewsArray={allNewsArray}
               allGiveawaysArray={allGiveawaysArray}
               user={user}
+              setUser={setUser}
               myFavoriteGames={myFavoriteGames}
+              setMyFavoriteGames={setMyFavoriteGames}
             />
           </Route>
           <Route exact path="/games">
             <SearchGames allGamesArray={allGamesArray} />
           </Route>
           <Route exact path="/games/:id">
-            <SingleGame user={user} setMyFavoriteGames={setMyFavoriteGames} />
+            <SingleGame
+              user={user}
+              setMyFavoriteGames={setMyFavoriteGames}
+              setUser={setUser}
+            />
           </Route>
           <Route exact path="/gamenews">
             <GameNews allNewsArray={allNewsArray} />
@@ -128,13 +146,20 @@ function App() {
               allMerchArray={allMerchArray}
               setAllMerchArray={setAllMerchArray}
               user={user}
+              purchase={purchase}
+              setPurchase={setPurchase}
+              total={total}
+              setTotal={setTotal}
             ></Merch>
           </Route>
           <Route exact path="/merch/:id">
-            <SingleMerchItem user={user}></SingleMerchItem>
-          </Route>
-          <Route exact path="/about">
-            <About />
+            <SingleMerchItem
+              user={user}
+              purchase={purchase}
+              setPurchase={setPurchase}
+              total={total}
+              setTotal={setTotal}
+            ></SingleMerchItem>
           </Route>
           <Route exact path="/login">
             <Login user={user} setUser={setUser} />
@@ -143,7 +168,13 @@ function App() {
             <Register />
           </Route>
           <Route exact path="/cart">
-            <Cart />
+            <Cart
+            user={user}
+              purchase={purchase}
+              setPurchase={setPurchase}
+              total={total}
+              setTotal={setTotal}
+            />
           </Route>
         </Switch>
         <Footer></Footer>

@@ -1,8 +1,10 @@
 import StyledNav from "../style/StyledNav";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import img from "../img/logo.png"
 
-const Nav = ({user}) => {
+const Nav = ({user, setUser, purchase}) => {
+  const history = useHistory();
+
   return (
     <StyledNav>
         
@@ -24,10 +26,11 @@ const Nav = ({user}) => {
       <div>
         <Link to="/merch">Merch</Link>
       </div>
-      <div>
-        <Link to="/about">About</Link>
-      </div>
-        {user? "" : <div><Link to="/login">Login</Link></div> }
+      {user && user.userCategory !=="admin"? <div><Link to="/cart">Cart {purchase.length > 0 ? purchase.length : ""}</Link></div> : ""}
+        {user? <button className="logOutBtn" onClick={()=>{
+          setUser(null);
+          history.push("/");
+        }}>Logout</button> : <div><Link to="/login">Login</Link></div> }
         {user? "" : <div><Link to="/register">Register</Link></div> }
         {user? <div>{user?.username}</div> : "" }
     </StyledNav>

@@ -22,6 +22,19 @@ const StyledNav = styled.div`
     text-decoration: underline;
   }
 
+  .logOutBtn {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+  }
+
+  .logOutBtn:hover {
+    text-decoration: underline;
+  }
+
 `;
 
 export default StyledNav;

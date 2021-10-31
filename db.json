@@ -14,7 +14,19 @@
       "userCategory": "user",
       "email": "neko@mail.com",
       "password": "1aB!555b",
-      "favoriteGames": []
+      "favoriteGames": [
+        {
+          "id": 2,
+          "title": "World of Tanks",
+          "thumbnail": "https://www.mmobomb.com/g/2/thumbnail.jpg",
+          "developer": "Wargaming",
+          "publisher": "Wargaming",
+          "genre": "Shooter",
+          "platform": "Windows",
+          "release_date": "2011-04-12",
+          "short_description": "World of Tanks is a team-based free MMO action game exclusively focused on the armored warfare in the mid-20th century. Created by the strategy masterminds at Wargaming.net, this is a shooter with a lot of tactical elements to be taken into consideration."
+        }
+      ]
     },
     {
       "username": "Mark",
@@ -33,44 +45,12 @@
       "id": 4
     },
     {
+      "id": 5,
       "username": "Tonni",
       "userCategory": "user",
       "email": "something@mail.com",
       "password": "3aB!555b",
       "favoriteGames": [
-        {
-          "id": 1,
-          "title": "Dauntless",
-          "thumbnail": "https://www.mmobomb.com/g/1/thumbnail.jpg",
-          "developer": "Phoenix Labs, Iron Galaxy",
-          "publisher": "Phoenix Labs",
-          "genre": "MMORPG",
-          "platform": "Windows",
-          "release_date": "2019-05-21",
-          "short_description": "Gather your friends, forge your weapons, and hunt ferocious behemoths in Dauntless, the co-op multiplayer RPG from Phoenix Labs, a studio consisting of developers from some of the biggest MMORPG ever made. Set adrift in a lush fantasy world known as the Shattered Isles, \"Slayers\" must band together to contend with a harsh environment and even harsher enemies Each Slayer can choose his or her weapon and attack style, from lightning-fast sword attacks to powerful axe strikes."
-        },
-        {
-          "id": 2,
-          "title": "World of Tanks",
-          "thumbnail": "https://www.mmobomb.com/g/2/thumbnail.jpg",
-          "developer": "Wargaming",
-          "publisher": "Wargaming",
-          "genre": "Shooter",
-          "platform": "Windows",
-          "release_date": "2011-04-12",
-          "short_description": "World of Tanks is a team-based free MMO action game exclusively focused on the armored warfare in the mid-20th century. Created by the strategy masterminds at Wargaming.net, this is a shooter with a lot of tactical elements to be taken into consideration."
-        },
-        {
-          "id": 3,
-          "title": "Warframe",
-          "thumbnail": "https://www.mmobomb.com/g/3/thumbnail.jpg",
-          "developer": "Digital Extremes",
-          "publisher": "Digital Extremes",
-          "genre": "Shooter",
-          "platform": "Windows",
-          "release_date": "2013-03-25",
-          "short_description": "Warframe is a free to play sci-fi co-op TPS (3rd-person shooter) being developed by Digital Extremes, the makers of The Darkness 2. As a race on the brink of extinction, players wield powerful suits the Tenno called warframes."
-        },
         {
           "id": 4,
           "title": "CRSED: F.O.A.D.",
@@ -93,109 +73,190 @@
           "release_date": "2017-05-30",
           "short_description": "Trick out your ride and take to the post-apocalyptic roads for battle in Crossout, the free-to-play vehicular combat game from Gaijin Entertainment! Featuring a vehicle design system with endless customization and fast-paced, armor-crunching combat, Crossout offers high-octane excitement in brief and explosive matches."
         }
-      ],
-      "id": 5
+      ]
     }
   ],
   "merch": [
     {
       "id": 1,
-      "itemName": "MFG Coffee Mug",
+      "itemName": "MFG Coffee Mug - White",
       "category": "Mugs",
-      "quantity": 145,
+      "quantity": 1,
       "price": 9.99,
       "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium illum voluptate ea repudiandae ut aut qui! Odio libero sint, tempore deleniti, veritatis hic voluptates deserunt iure enim autem ab aut minima ratione doloribus nesciunt non reiciendis? Itaque velit dolorum praesentium nostrum. Quasi voluptatem ut odit accusamus adipisci commodi eveniet!</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis molestiae facilis beatae omnis voluptatum, fuga sit ab quos commodi eveniet nobis atque consectetur libero sequi deleniti, at vero accusantium qui enim odit deserunt animi? Explicabo optio porro suscipit vitae ducimus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero doloribus maxime excepturi, eius, ab fugiat magni quas nesciunt culpa error, sint saepe. Rem, aut. Quod, harum ducimus, assumenda ex voluptate optio rerum impedit minus, provident officia voluptatem. Quibusdam unde quis impedit, voluptates odit dolorem fugiat repudiandae tenetur ut alias, nulla accusamus neque dolore deserunt dolorum repellendus nam atque? Quibusdam!</p>"
     },
     {
-      "id": 2,
-      "itemName": "MFG Keychain - White",
-      "category": "Keychains",
-      "quantity": 38,
-      "price": 19.99,
+      "id": 21,
+      "itemName": "MFG Coffee Mug - Blue",
+      "category": "Mugs",
+      "quantity": 1,
+      "price": 9.99,
       "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium illum voluptate ea repudiandae ut aut qui! Odio libero sint, tempore deleniti, veritatis hic voluptates deserunt iure enim autem ab aut minima ratione doloribus nesciunt non reiciendis? Itaque velit dolorum praesentium nostrum. Quasi voluptatem ut odit accusamus adipisci commodi eveniet!</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis molestiae facilis beatae omnis voluptatum, fuga sit ab quos commodi eveniet nobis atque consectetur libero sequi deleniti, at vero accusantium qui enim odit deserunt animi? Explicabo optio porro suscipit vitae ducimus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero doloribus maxime excepturi, eius, ab fugiat magni quas nesciunt culpa error, sint saepe. Rem, aut. Quod, harum ducimus, assumenda ex voluptate optio rerum impedit minus, provident officia voluptatem. Quibusdam unde quis impedit, voluptates odit dolorem fugiat repudiandae tenetur ut alias, nulla accusamus neque dolore deserunt dolorum repellendus nam atque? Quibusdam!</p>"
     },
     {
-      "id": 3,
-      "itemName": "MFG Men's T-shirt L",
-      "category": "Men's Shirts",
-      "quantity": 8,
-      "price": 29.99,
+      "id": 32,
+      "itemName": "MFG Coffee Mug - Teal",
+      "category": "Mugs",
+      "quantity": 1,
+      "price": 9.99,
       "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium illum voluptate ea repudiandae ut aut qui! Odio libero sint, tempore deleniti, veritatis hic voluptates deserunt iure enim autem ab aut minima ratione doloribus nesciunt non reiciendis? Itaque velit dolorum praesentium nostrum. Quasi voluptatem ut odit accusamus adipisci commodi eveniet!</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis molestiae facilis beatae omnis voluptatum, fuga sit ab quos commodi eveniet nobis atque consectetur libero sequi deleniti, at vero accusantium qui enim odit deserunt animi? Explicabo optio porro suscipit vitae ducimus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero doloribus maxime excepturi, eius, ab fugiat magni quas nesciunt culpa error, sint saepe. Rem, aut. Quod, harum ducimus, assumenda ex voluptate optio rerum impedit minus, provident officia voluptatem. Quibusdam unde quis impedit, voluptates odit dolorem fugiat repudiandae tenetur ut alias, nulla accusamus neque dolore deserunt dolorum repellendus nam atque? Quibusdam!</p>"
     },
     {
-      "id": 4,
-      "itemName": "MFG Men's T-shirt XL",
-      "category": "Men's Shirts",
-      "quantity": 25,
-      "price": 29.99,
+      "id": 61,
+      "itemName": "MFG Coffee Mug - Brown",
+      "category": "Mugs",
+      "quantity": 1,
+      "price": 9.99,
       "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?",
       "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium illum voluptate ea repudiandae ut aut qui! Odio libero sint, tempore deleniti, veritatis hic voluptates deserunt iure enim autem ab aut minima ratione doloribus nesciunt non reiciendis? Itaque velit dolorum praesentium nostrum. Quasi voluptatem ut odit accusamus adipisci commodi eveniet!</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis molestiae facilis beatae omnis voluptatum, fuga sit ab quos commodi eveniet nobis atque consectetur libero sequi deleniti, at vero accusantium qui enim odit deserunt animi? Explicabo optio porro suscipit vitae ducimus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero doloribus maxime excepturi, eius, ab fugiat magni quas nesciunt culpa error, sint saepe. Rem, aut. Quod, harum ducimus, assumenda ex voluptate optio rerum impedit minus, provident officia voluptatem. Quibusdam unde quis impedit, voluptates odit dolorem fugiat repudiandae tenetur ut alias, nulla accusamus neque dolore deserunt dolorum repellendus nam atque? Quibusdam!</p>"
-    },
-    {
-      "id": 5,
-      "itemName": "MFG Women's T-shirt S",
-      "category": "Women's Shirts",
-      "quantity": 12,
-      "price": 29.99,
-      "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium illum voluptate ea repudiandae ut aut qui! Odio libero sint, tempore deleniti, veritatis hic voluptates deserunt iure enim autem ab aut minima ratione doloribus nesciunt non reiciendis? Itaque velit dolorum praesentium nostrum. Quasi voluptatem ut odit accusamus adipisci commodi eveniet!</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis molestiae facilis beatae omnis voluptatum, fuga sit ab quos commodi eveniet nobis atque consectetur libero sequi deleniti, at vero accusantium qui enim odit deserunt animi? Explicabo optio porro suscipit vitae ducimus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero doloribus maxime excepturi, eius, ab fugiat magni quas nesciunt culpa error, sint saepe. Rem, aut. Quod, harum ducimus, assumenda ex voluptate optio rerum impedit minus, provident officia voluptatem. Quibusdam unde quis impedit, voluptates odit dolorem fugiat repudiandae tenetur ut alias, nulla accusamus neque dolore deserunt dolorum repellendus nam atque? Quibusdam!</p>"
-    },
-    {
-      "id": 6,
-      "itemName": "MFG Women's T-shirt M",
-      "category": "Women's Shirts",
-      "quantity": 31,
-      "price": 29.99,
-      "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium illum voluptate ea repudiandae ut aut qui! Odio libero sint, tempore deleniti, veritatis hic voluptates deserunt iure enim autem ab aut minima ratione doloribus nesciunt non reiciendis? Itaque velit dolorum praesentium nostrum. Quasi voluptatem ut odit accusamus adipisci commodi eveniet!</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis molestiae facilis beatae omnis voluptatum, fuga sit ab quos commodi eveniet nobis atque consectetur libero sequi deleniti, at vero accusantium qui enim odit deserunt animi? Explicabo optio porro suscipit vitae ducimus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero doloribus maxime excepturi, eius, ab fugiat magni quas nesciunt culpa error, sint saepe. Rem, aut. Quod, harum ducimus, assumenda ex voluptate optio rerum impedit minus, provident officia voluptatem. Quibusdam unde quis impedit, voluptates odit dolorem fugiat repudiandae tenetur ut alias, nulla accusamus neque dolore deserunt dolorum repellendus nam atque? Quibusdam!</p>"
-    },
-    {
-      "itemName": "MFG Keychain - Blue",
-      "category": "Keychains",
-      "quantity": "125",
-      "price": "19.99",
-      "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?",
-      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium illum voluptate ea repudiandae ut aut qui! Odio libero sint, tempore deleniti, veritatis hic voluptates deserunt iure enim autem ab aut minima ratione doloribus nesciunt non reiciendis? Itaque velit dolorum praesentium nostrum. Quasi voluptatem ut odit accusamus adipisci commodi eveniet!</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis molestiae facilis beatae omnis voluptatum, fuga sit ab quos commodi eveniet nobis atque consectetur libero sequi deleniti, at vero accusantium qui enim odit deserunt animi? Explicabo optio porro suscipit vitae ducimus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero doloribus maxime excepturi, eius, ab fugiat magni quas nesciunt culpa error, sint saepe. Rem, aut. Quod, harum ducimus, assumenda ex voluptate optio rerum impedit minus, provident officia voluptatem. Quibusdam unde quis impedit, voluptates odit dolorem fugiat repudiandae tenetur ut alias, nulla accusamus neque dolore deserunt dolorum repellendus nam atque? Quibusdam!</p>",
-      "id": 7
     },
     {
       "itemName": "a",
       "category": "a",
-      "quantity": "1",
-      "price": "1",
+      "quantity": 1,
+      "price": 19.99,
       "shortDesc": "a",
       "description": "a",
-      "id": 8
+      "id": 62
     },
     {
       "itemName": "b",
       "category": "b",
-      "quantity": "1",
-      "price": "2",
-      "shortDesc": "b",
+      "quantity": 1,
+      "price": 14.99,
+      "shortDesc": "bb",
       "description": "bbb",
-      "id": 9
+      "id": 63
+    }
+  ],
+  "purchases": [
+    {
+      "purchase": [
+        {
+          "id": 1,
+          "itemName": "MFG Coffee Mug - White",
+          "category": "Mugs",
+          "quantity": 1,
+          "price": 9.99,
+          "itemPrice": 9.99,
+          "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?"
+        }
+      ],
+      "info": {
+        "username": "John2",
+        "price": 9.99,
+        "firstName": "Bill",
+        "middleName": "Burrito",
+        "lastName": "Caserole",
+        "address1": "Husinskih Rudara 22",
+        "address2": "",
+        "zipcode": "11000",
+        "city": "Belgrade",
+        "myState": "",
+        "country": "Serbia",
+        "phone": "062255399",
+        "ccn": "222"
+      },
+      "id": 1
     },
     {
-      "itemName": "c",
-      "category": "c",
-      "quantity": "1",
-      "price": "23",
-      "shortDesc": "cc",
-      "description": "cccccc",
-      "id": 10
+      "purchase": [
+        {
+          "id": 1,
+          "itemName": "MFG Coffee Mug - White",
+          "category": "Mugs",
+          "quantity": 1,
+          "price": 9.99,
+          "itemPrice": 9.99,
+          "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?"
+        }
+      ],
+      "info": {
+        "username": "John2",
+        "price": 9.99,
+        "firstName": "Bill",
+        "middleName": "Burrito",
+        "lastName": "Caserole",
+        "address1": "Husinskih Rudara 22",
+        "address2": "",
+        "zipcode": "11000",
+        "city": "Belgrade",
+        "myState": "",
+        "country": "Serbia",
+        "phone": "062255399",
+        "ccn": "222"
+      },
+      "id": 2
     },
     {
-      "itemName": "d",
-      "category": "d",
-      "quantity": "1",
-      "price": "233",
-      "shortDesc": "ddd",
-      "description": "dddddddddd",
-      "id": 11
+      "purchase": [
+        {
+          "id": 1,
+          "itemName": "MFG Coffee Mug - White",
+          "category": "Mugs",
+          "quantity": 2,
+          "price": 9.99,
+          "itemPrice": 19.98,
+          "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?"
+        }
+      ],
+      "info": {
+        "username": "John2",
+        "price": 19.98,
+        "firstName": "John",
+        "middleName": "Fitzgerald",
+        "lastName": "Berry",
+        "address1": "Husinskih Rudara 22",
+        "address2": "",
+        "zipcode": "11000",
+        "city": "Belgrade",
+        "myState": "",
+        "country": "Serbia",
+        "phone": "062255399",
+        "ccn": "222-222-222-22-22"
+      },
+      "id": 3
+    },
+    {
+      "purchase": [
+        {
+          "id": 32,
+          "itemName": "MFG Coffee Mug - Teal",
+          "category": "Mugs",
+          "quantity": 1,
+          "price": 9.99,
+          "itemPrice": 9.99,
+          "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat suscipit repellendus optio debitis itaque?"
+        },
+        {
+          "id": 62,
+          "itemName": "a",
+          "category": "a",
+          "quantity": 1,
+          "price": 19.99,
+          "itemPrice": 19.99,
+          "shortDesc": "a"
+        }
+      ],
+      "info": {
+        "username": "John2",
+        "price": 29.979999999999997,
+        "firstName": "John",
+        "middleName": "Fitzgerald",
+        "lastName": "Berry",
+        "address1": "Husinskih Rudara 22",
+        "address2": "",
+        "zipcode": "11000",
+        "city": "Belgrade",
+        "myState": "",
+        "country": "Serbia",
+        "phone": "062255399",
+        "ccn": "222-222-222-222-22-22"
+      },
+      "id": 4
     }
   ]
 }

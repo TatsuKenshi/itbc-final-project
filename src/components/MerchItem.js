@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import StyledMerchItem from "../style/StyledMerchItem";
+import { deleteMerchItem, getAllMerch } from "../Service";
 
-const MerchItem = ({ merchItem, user }) => {
+const MerchItem = ({ merchItem, user, allMerchArray, setAllMerchArray, setDisplayMerch }) => {
   return (
     <StyledMerchItem>
       <div className="main">
@@ -17,6 +18,21 @@ const MerchItem = ({ merchItem, user }) => {
         <Link to={`/merch/${merchItem.id}`}>
           <button>go to item</button>
         </Link>
+        {user && user.userCategory === "admin" ? 
+        <button onClick={()=>{
+          deleteMerchItem(merchItem.id)
+          /* getAllMerch().then((res)=> setAllMerchArray(res.data)).then(()=>{
+
+            setDisplayMerch(res.data)
+          }) */
+
+          getAllMerch().then((res)=>{
+            setAllMerchArray(res.data)
+            setDisplayMerch(res.data)
+          })
+
+        }}>remove item</button>
+        : ""}
       </div>
     </StyledMerchItem>
   );

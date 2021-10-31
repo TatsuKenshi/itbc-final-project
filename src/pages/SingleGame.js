@@ -4,7 +4,7 @@ import axios from "axios";
 import StyledSingleGame from "../style/StyledSingleGame";
 import { getUserById } from "../Service";
 
-const SingleGame = ({ user, setMyFavoriteGames }) => {
+const SingleGame = ({ user, setUser, setMyFavoriteGames }) => {
   // one game state
   const [oneGame, setOneGame] = useState([]);
 
@@ -55,59 +55,40 @@ const SingleGame = ({ user, setMyFavoriteGames }) => {
                     (fave) => fave.id === Number(id)
                   );
 
-                  // if no, we patch the user
-                  //if (!found) {
-                  getUserById(user.id)
-                    .then((res) => {
-                      let favoriteGames = res.data.favoriteGames;
-                      return favoriteGames;
-                    })
-                    .then((favoriteGames) => {
-                      // is there a game with this id on the user's object in db
-                      let found = favoriteGames.find(
-                        (fave) => fave.id === Number(id)
-                      );
+                  // update the favoriteGames array on the user object
+                  if (!found) {
+                    let copy = user;
+                    copy.favoriteGames.push({
+                      id: Number(id),
+                      title: oneGame.title,
+                      thumbnail: oneGame.thumbnail,
+                      developer: oneGame.developer,
+                      publisher: oneGame.publisher,
+                      genre: oneGame.genre,
+                      platform: oneGame.platform,
+                      release_date: oneGame.release_date,
+                      short_description: oneGame.short_description,
+                    });
 
-                      if (!found) {
-                        axios({
-                          method: "patch",
-                          url: `https://itbc-final-project-db.herokuapp.com/users/${user.id}`,
-                          data: {
-                            favoriteGames: [
-                              ...favoriteGames,
+                    setUser(copy);
 
-                              // game object
-                              {
-                                id: Number(id),
-                                title: oneGame.title,
-                                thumbnail: oneGame.thumbnail,
-                                developer: oneGame.developer,
-                                publisher: oneGame.publisher,
-                                genre: oneGame.genre,
-                                platform: oneGame.platform,
-                                release_date: oneGame.release_date,
-                                short_description: oneGame.short_description,
-                              },
-                            ],
-                          },
-                        });
-                      }
-                    }).then(()=>{
-                      getUserById(user.id).then((res) => {
-                        setMyFavoriteGames((prev) => [...prev, {
-                          id: Number(id),
-                          title: oneGame.title,
-                          thumbnail: oneGame.thumbnail,
-                          developer: oneGame.developer,
-                          publisher: oneGame.publisher,
-                          genre: oneGame.genre,
-                          platform: oneGame.platform,
-                          release_date: oneGame.release_date,
-                          short_description: oneGame.short_description,
-                        }]);
-                      });
-                    })
-                  
+                    // set myFavoriteGames to the new version of the favoriteGames array on the user object
+                    setMyFavoriteGames(user.favoriteGames);
+
+                    // update the user in the base
+                    axios({
+                      method: "put",
+                      url: `http://localhost:3005/users/${user.id}`,
+                      data: {
+                        id: user.id,
+                        username: user.username,
+                        userCategory: user.userCategory,
+                        email: user.email,
+                        password: user.password,
+                        favoriteGames: user.favoriteGames,
+                      },
+                    });
+                  }
                 }}
               >
                 Favorite

@@ -7,7 +7,7 @@ import StyledProductForm from "../style/StyledProductForm";
 import { getAllMerch, newMerchItem } from "../Service";
 import { Link } from "react-router-dom";
 
-const Merch = ({ allMerchArray, setAllMerchArray, user }) => {
+const Merch = ({ allMerchArray, setAllMerchArray, user, purchase, setPurchase }) => {
   // states for select, input, and merch which will be displayed
   const [selectValue, setSelectValue] = useState([]);
   const [selectValue2, setSelectValue2] = useState([]);
@@ -156,8 +156,8 @@ const Merch = ({ allMerchArray, setAllMerchArray, user }) => {
                   newMerchItem(
                     itemName,
                     category,
-                    quantity,
-                    price,
+                    Number (quantity),
+                    Number (price),
                     shortDesc,
                     description
                   ).then((res) => {
@@ -176,7 +176,7 @@ const Merch = ({ allMerchArray, setAllMerchArray, user }) => {
                 }
               }}
             >
-              add new item
+              add item
             </button>
             <br />
             <br />
@@ -263,11 +263,14 @@ const Merch = ({ allMerchArray, setAllMerchArray, user }) => {
                 key={merchItem.itemName}
                 merchItem={merchItem}
                 user={user}
+                allMerchArray={allMerchArray}
+                setAllMerchArray={setAllMerchArray}
+                setDisplayMerch={setDisplayMerch}
               />
             );
           })}
         </div>
-        {/* end of game display */}
+        {/* end of merch display */}
       </StyledMerch>
     </>
   );

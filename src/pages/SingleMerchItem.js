@@ -5,10 +5,10 @@ import StyledSingleMerchItem from "../style/StyledSingleMerchItem";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const SingleMerchItem = ({ user }) => {
+const SingleMerchItem = ({ user, purchase, setPurchase, total, setTotal }) => {
   // one merch item state
   const [oneMerchItem, setOneMerchItem] = useState([]);
-  console.log(oneMerchItem);
+  //console.log(purchase);
 
   // merch item id
   let { id } = useParams();
@@ -35,7 +35,45 @@ const SingleMerchItem = ({ user }) => {
             <div className="addToCart">
               <button
                 onClick={() => {
-                  // we update the shoppingCart state with this item
+                  /* let found = user.favoriteGames.find(
+                    (fave) => fave.id === Number(id)
+                  ); */
+
+                  let found = purchase.find((purchasedItem) => {
+                    return purchasedItem.id === oneMerchItem.id;
+                  });
+
+                  if (!found) {
+                    setPurchase((prev) => [
+                      ...prev,
+                      {
+                        id: oneMerchItem.id,
+                        itemName: oneMerchItem.itemName,
+                        category: oneMerchItem.category,
+                        quantity: 1,
+                        price: oneMerchItem.price,
+                        itemPrice: oneMerchItem.price * oneMerchItem.quantity,
+                        shortDesc: oneMerchItem.shortDesc
+                      },
+                    ]);
+
+                    // we update the shoppingCart state with this item
+                  } else {
+                    let copy = purchase;
+
+                    let index = purchase.findIndex(
+                      (purchaseItem) => purchaseItem.id === found.id
+                    );
+                    copy[index].quantity += 1;
+                    copy[index].itemPrice = copy[index].quantity * copy[index].price
+                    setPurchase(copy);
+                  }
+
+                  let sumArray = purchase.map((item)=> item.itemPrice).reduce((prev, curr)=>{
+                    return prev + curr
+                  },0)
+                  setTotal(sumArray);
+
                 }}
               >
                 add to cart
