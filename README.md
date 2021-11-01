@@ -4,7 +4,7 @@ My Free Games is a site that allows visitors to search free MMO games, game news
 
 ## Motivation
 
-I made this site as my final project for IT Bootcamp, a ten-week course on front-end web development. I started the course with very little practical knowlesge, and My Free Games is the end result of this awesome course.
+I made this site as my final project for IT Bootcamp, a ten-week course on front-end web development. I started the course with very little practical knowledge, and My Free Games is the end result of this awesome course.
 
 ## Build Status
 
@@ -74,3 +74,7 @@ I used the mmobomb's https://www.mmobomb.com/api free API for this project. It i
 - The Cart is a simple one. Logged in users can add and remove items, as well as increase and decrease the quantity of each desired item. The checkout button when clicked reveals the checkout form, where the user can enter their full name, billing address, and credit card details.
 
 - Log in/Registration sections are straightforward, with login requiring the username and password. The Registration form also has the email field.
+
+## Credits
+
+Finally, I'd like to thank [IT Bootcamp https://itbootcamp.rs/] and teachers there. Without them, this site wouldn't be possible, at least not at this time.
