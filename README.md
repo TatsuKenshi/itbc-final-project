@@ -1,71 +1,62 @@
-# Getting Started with Create React App
+# My Free Games
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My Free Games is a site that allows visitors to search free MMO games, game news, as well as MMO game giveaways. Visitors can also create accounts, favorite/unfavorite games, and buy mock merchandise with MFG (My Free Games) branding.
 
-## Available Scripts
+## Motivation
 
-In the project directory, you can run:
+I made this site as my final project for IT Bootcamp, a ten-week course on front-end web development. I started the course with very little practical knowlesge, and My Free Games is the end result of this awesome course.
 
-### `npm start`
+## Build Status
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The site is finished, with all the intended functionalities implemented. In the future, I plan to polish the project, as well as add some minor things such as social links and info inside the footer.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologie Used
 
-### `npm test`
+For this project, I went with a simple setup. The technologies used include:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js
+- React Router
+- Styled Components
+- axios
+- db.json
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+My Free Games has several important features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Homepage that displays a randomly selected featured game, news article, and giveaway
+- Game Search page which lists all the available games
+- Game News page with all the articles
+- Merch section where users can buy mock merch
+- Cart where users can finalize their purchases
+- Giveaeays section with active giveaways
+- Log in and Registration pages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
+To get this little project up and running, you should:
 
-### `npm run eject`
+1. download the zip from the main branch
+2. unpack it inside the folder of your choosing
+3. run the "npm install" command from the terminal
+4. run the "npm start" command from the terminal
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You don't need to run the "npm run server" command, because the database is hosted on heroku.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API
+I used the [mmobomb] (https://www.mmobomb.com/api) free API for this project. It is a great piece of API, which offers a list of 350+ games, around 50 news, and around a dozen giveaways. The API also allows fetching individual games.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## How to use
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- The home page displays a random featured game, news article, and a giveaway.
 
-## Learn More
+- In the Seach Games section, users can browse the game catalog, which contains 350+ free MMO games. Each game is represented with a thumbnail, title, and essential info (platform, short description, developer, etc). Each game also has a dedicated page with additional info (system requirements, long description, a large screenshot, etc). Logged in users can favorite/unfavorite games as they wish.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- The Game News section lists all the current news from the MMO gaming world (currently, there's around 50 articles on the list). Each news item is represented with a thumbnail, title, and a short description. Users can also read full articles by clicking on the "read more" button.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The Giveaways section contains all of the featured and currently active giveaways. Giveaways are represented in a similar fasnion to games and news, with each having a thumbnail, title, as well as the percentage of still available keys. Users who haven't logged in can't see individual giveaway pages (individual pages contain links to giveaways).
 
-### Code Splitting
+- The Merch section has a list of merch items (the list is currently limited to coffee mugs and a couple of unnamed products added for testing purposes). Users can browse the available merchandise, but they have to log in in order to add items to the cart.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- The Cart is a simple one. Logged in users can add and remove items, as well as increase and decrease the quantity of each desired item. The checkout button when clicked reveals the checkout form, where the user can enter their full name, billing address, and credit card details.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# itbootcamp_final_project
+- Log in/Registration sections are straightforward, with login requiring the username and password. The Registration form also has the email field.
