@@ -42,8 +42,22 @@ To get this little project up and running, you should:
 
 You don't need to run the "npm run server" command, because the database is hosted on heroku.
 
+### Live Version
+
+If you just want to take a quick glance at the site, you can also jump over to https://tatsukenshi.github.io/itbc-final-project/. That's the project's github pages presentation. Due to the issues with react router and gh pages clashing with each other, please click on the company logo or the Home link (both in the navbar) when the site loads.
+
+If you'd like to log in to check out all of the features:
+
+regular user:
+username: John2
+pass: 1aB!555b
+
+admin:
+username: John
+pass: 1aB!555a
+
 ## API
-I used the [mmobomb] (https://www.mmobomb.com/api) free API for this project. It is a great piece of API, which offers a list of 350+ games, around 50 news, and around a dozen giveaways. The API also allows fetching individual games.
+I used the mmobomb's https://www.mmobomb.com/api free API for this project. It is a great piece of API, which offers a list of 350+ games, around 50 news, and around a dozen giveaways. The API also allows fetching individual games.
 
 ## How to use
 
