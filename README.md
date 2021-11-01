@@ -77,4 +77,4 @@ I used the mmobomb's https://www.mmobomb.com/api free API for this project. It i
 
 ## Credits
 
-Finally, I'd like to thank [IT Bootcamp https://itbootcamp.rs/] and teachers there. Without them, this site wouldn't be possible, at least not at this time.
+Finally, I'd like to thank IT Bootcamp https://itbootcamp.rs/ and teachers there. Without them, this site wouldn't be possible, at least not at this time.
