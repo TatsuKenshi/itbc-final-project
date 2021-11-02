@@ -10,7 +10,7 @@ I made this site as my final project for IT Bootcamp, a ten-week course on front
 
 The site is finished, with all the intended functionalities implemented. In the future, I plan to polish the project, as well as add some minor things such as social links and info inside the footer.
 
-## Technologie Used
+## Technologies Used
 
 For this project, I went with a simple setup. The technologies used include:
 
