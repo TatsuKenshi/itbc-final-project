@@ -42,6 +42,10 @@ To get this little project up and running, you should:
 
 You don't need to run the "npm run server" command, because the database is hosted on heroku.
 
+5. replace the first line in the package.json file "homepage": "http://TatsuKenshi.github.io/itbc-final-project" with "homepage": "http://localhost:3000"
+
+Now, you're good to go.
+
 ### Live Version
 
 If you just want to take a quick glance at the site, you can also jump over to https://tatsukenshi.github.io/itbc-final-project/. That's the project's github pages presentation. Due to the issues with react router and gh pages clashing with each other, please click on the company logo or the Home link (both in the navbar) when the site loads.
